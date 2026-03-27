@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokédex Pro</title>
+
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#ff0000">
+</head>
+<body>
+
+<header>
+  <h1>Pokédex</h1>
+  <button id="themeToggle">🌙</button>
+</header>
+
+<input type="text" id="search" placeholder="Search Pokémon...">
+
+<div id="controls">
+  <label>
+    <input type="checkbox" id="shinyToggle">
+    Shiny Mode ✨
+  </label>
+</div>
+
+<p id="counter"></p>
+
+<div id="pokedex"></div>
+
+<!-- Modal -->
+<div id="modal" class="hidden">
+  <div class="modal-content">
+    <span id="close">&times;</span>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
