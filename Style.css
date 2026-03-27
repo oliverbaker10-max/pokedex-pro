@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: Arial;
+  background: #f2f2f2;
+}
+
+header {
+  background: red;
+  color: white;
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#search {
+  width: 90%;
+  margin: 10px auto;
+  display: block;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+}
+
+#controls {
+  text-align: center;
+}
+
+#pokedex {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.pokemon {
+  background: white;
+  border-radius: 15px;
+  padding: 10px;
+  text-align: center;
+}
+
+.caught {
+  background: #7ed957;
+}
+
+/* Modal */
+#modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+}
+
+.hidden {
+  display: none;
+}
+
+.modal-content {
+  background: white;
+  margin: 20% auto;
+  padding: 20px;
+  width: 80%;
+  border-radius: 10px;
+}
+
+.dark {
+  background: #121212;
+  color: white;
+}
+
+.dark .pokemon,
+.dark .modal-content {
+  background: #1e1e1e;
+}
