@@ -7,31 +7,42 @@
   <link rel="stylesheet" href="style.css">
   <link rel="manifest" href="manifest.json">
   <meta name="theme-color" content="#7851A9">
+
+  <!-- Better mobile support -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
 <header>
   <h1>Pokédex</h1>
-  <button id="themeToggle">🌙</button>
+  <button id="themeToggle" aria-label="Toggle theme">🌙</button>
 </header>
 
-<input type="text" id="search" placeholder="Search Pokémon...">
+<main>
+  <input 
+    type="text" 
+    id="search" 
+    placeholder="Search Pokémon..." 
+    aria-label="Search Pokémon"
+    autocomplete="off"
+  >
 
-<div id="controls">
-  <label>
-    <input type="checkbox" id="shinyToggle">
-    Shiny Mode ✨
-  </label>
-</div>
+  <div id="controls">
+    <label for="shinyToggle">
+      <input type="checkbox" id="shinyToggle">
+      Shiny Mode ✨
+    </label>
+  </div>
 
-<p id="counter"></p>
+  <p id="counter" aria-live="polite"></p>
 
-<div id="pokedex"></div>
+  <div id="pokedex"></div>
+</main>
 
 <!-- Modal -->
-<div id="modal" class="hidden">
+<div id="modal" class="hidden" role="dialog" aria-modal="true">
   <div class="modal-content">
-    <span id="close">&times;</span>
+    <button id="close" aria-label="Close modal">&times;</button>
     <div id="modalBody"></div>
   </div>
 </div>
