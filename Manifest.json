@@ -1,6 +1,6 @@
 {
   "name": "Pokedex Pro",
-  "short_name": "Pokedex",
+  "short_name": "Pokedex Pro",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
