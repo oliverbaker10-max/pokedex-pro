@@ -1,5 +1,5 @@
 body {
-  margin: 0;
+  margin: 20;
   font-family: Arial;
   background: #f2f2f2;
 }
@@ -7,7 +7,7 @@ body {
 header {
   background: red;
   color: white;
-  padding: 15px;
+  padding: 80px;
   display: flex;
   justify-content: space-between;
 }
@@ -28,7 +28,7 @@ header {
 #pokedex {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 20px;
   padding: 10px;
 }
 
